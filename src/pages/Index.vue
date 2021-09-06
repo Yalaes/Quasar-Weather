@@ -83,7 +83,10 @@ export default defineComponent({
       ).then((response) => {
         this.weatherData = response.data;
         this.$q.loading.hide()
-      });
+      }).catch( err => {
+        this.$q.loading.hide()
+        
+      })
     },
     getWeatherByCity() {
       this.$q.loading.show()
@@ -92,7 +95,9 @@ export default defineComponent({
       ).then((response) => {
         this.weatherData = response.data;
         this.$q.loading.hide()
-      });
+      }).catch(err => {
+        this.$q.loading.hide()
+      })
     },
   },
   computed: {
