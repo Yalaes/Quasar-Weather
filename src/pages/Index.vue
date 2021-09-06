@@ -64,7 +64,7 @@ export default defineComponent({
       lat: null,
       long: null,
       unit: "metric",
-      key: "8006a2da8b9cda16e5ca41aa433521ce",
+      key: YOURAPIKEYHERE,
       apiUrl: "https://api.openweathermap.org/data/2.5/weather",
     };
   },
